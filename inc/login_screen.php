@@ -11,7 +11,7 @@
 	add_action( 'login_head', 'custom_login_logo' );
 	add_filter( 'login_headerurl', 'custom_login_url' );
 	add_filter( 'login_headertitle', 'custom_login_title' );
-	add_action( 'wp_before_admin_bar_render', 'admin_bar_remove', 0);
+	
 
 	function custom_login_logo() { ?>
 		<style type="text/css">
@@ -36,11 +36,4 @@
     	return $title;
 	}
 
-	function admin_bar_remove() {
-	    global $wp_admin_bar;
-	    $wp_admin_bar->remove_menu('wp-logo');
-	    $wp_admin_bar->remove_menu('comments');
-	    $wp_admin_bar->remove_menu('new-content');
-	    $wp_admin_bar->remove_menu('updates');
-	    #...
-	}
+	
