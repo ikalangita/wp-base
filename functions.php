@@ -1,8 +1,8 @@
 <?php
 
-	require get_template_directory() . '/inc/login_screen.php';
-	require get_template_directory() . '/inc/theme_options.php';
-	require get_template_directory() . '/inc/dashboard.php';
+	require( dirname( __FILE__ ) . '/inc/login_screen.php';
+	require( dirname( __FILE__ ) . '/inc/theme_options.php';
+	require( dirname( __FILE__ ) . '/inc/dashboard.php';
 	
 	/*
 	=====================================
