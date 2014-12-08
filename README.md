@@ -1,7 +1,4 @@
 wordpress-default
 =================
 
-Default settings wordpress
-
-J'ai crée ce repository pour accélerer mes devs, c'est donc pour un usage personnel mais vous pouvez l'utiliser à votre tour et proposer d'autres fonctions à la communauté. 
-Le but c'est d'avoir une base solide quand on comment un nouveau projet de développement sous wordpress et à ne plus perdre du temps à chercher par ci et par là les fonctions de base.
+Des fichiers de base pour accélerer le dév d'un projet wordpress, bien sur le theme par defaut du CMS inclus déjà des fonctions prêts à cuire mais je prefère centraliser les codes que j'utilise de temps en temps, ceci est donc purement personnel, après tout chacun est libre de l'utiliser ou non.
