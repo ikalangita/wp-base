@@ -1,9 +1,9 @@
 <?php
 
-	require( dirname( __FILE__ ) . '/inc/login_screen.php';
+require( dirname( __FILE__ ) . '/inc/login_screen.php';
 	require( dirname( __FILE__ ) . '/inc/theme_options.php';
-	require( dirname( __FILE__ ) . '/inc/dashboard.php';
-	
+		require( dirname( __FILE__ ) . '/inc/dashboard.php';
+
 	/*
 	=====================================
 	AFTER THEME SETUP ADD BASICS SETTINGS
@@ -70,4 +70,20 @@
 		$url = $thumb['0'];
 		return $url;
 	}
-	
+
+	/*
+	======================================
+	REMOVE URL FROM IMAGES 
+	=====================================
+	*/
+	add_filter( 'the_content', 'attachment_image_link_remove_filter' );
+	function attachment_image_link_remove_filter( $content ) {
+		$content =
+		preg_replace(
+			array('{<a(.*?)(wp-att|wp-content\/uploads)[^>]*><img}',
+				'{ wp-image-[0-9]*" /></a>}'),
+			array('<img','" />'),
+			$content
+			);
+		return $content;
+	}	
